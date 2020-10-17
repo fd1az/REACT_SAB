@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autitos</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script>
+      //aca corremos react
+      //document.createElement()
+      const Cars = ({ marca, modelo, tipo }) => {
+        return React.createElement('div', {}, [
+          React.createElement('h2', {}, marca),
+          React.createElement('h3', {}, modelo),
+          React.createElement('h4', {}, tipo),
+        ]);
+      };
+
+      const Title = ({ title }) => {
+        return React.createElement('h1', { id: 'miId' }, title);
+      };
+      const App = () => {
+        /*FIRMA DE LA FUNCTION -> 
+         1- Elemento a renderizar (html satring/ otro react element)  <div></div>
+         2- Objecto Props {} - (son como atributos de un elemento HTML) <div id="lala" className=""></div>
+         3- Childrens  - <div> asdasdasd </div>
+         */
+        return React.createElement('div', {}, [
+          React.createElement(Title, { title: 'React baby' }),
+          React.createElement(Cars, {
+            marca: 'FIAT',
+            modelo: 'Punto',
+            tipo: 'sedan',
+          }),
+          React.createElement(Cars, {
+            marca: 'FORD',
+            modelo: 'FIESTA',
+            tipo: 'SEDAN',
+          }),
+          React.createElement(Cars, {
+            marca: 'FERRARI',
+            modelo: 'F50',
+            tipo: 'Coupe',
+          }),
+        ]);
+      };
+
+      ReactDOM.render(
+        React.createElement(App),
+        document.getElementById('root')
+      );
+    </script>
+  </body>
+</html>
