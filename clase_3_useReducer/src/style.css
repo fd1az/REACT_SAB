@@ -1,0 +1,35 @@
+body {
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.counter {
+  background-color: #bb86fc;
+  border-radius: 4px;
+  width: 400px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  outline: none;
+}
+
+.number-counter {
+  font-size: 32px;
+}
+
+.btn {
+  background-color: #03dac5;
+  color: #000;
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.btn:active {
+  transform: scale(1.1);
+}
