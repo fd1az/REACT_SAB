@@ -1,0 +1,11 @@
+.posts {
+  flex: 1;
+  margin: auto;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.loading {
+  font-size: 24px;
+}

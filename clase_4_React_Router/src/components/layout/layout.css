@@ -1,0 +1,8 @@
+.layout {
+  border: 1px solid black;
+  flex-basis: 75%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
