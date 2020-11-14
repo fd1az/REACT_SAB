@@ -31,7 +31,7 @@ const FactorialDe = ({ num, increment }) => {
 
 //? USAMOS HOOKS Y REACT MEMO
 export default React.memo(FactorialDe);
-
+//export default FactorialDe;
 //? USAMOS SOLO HOOKS
 //export default FactorialDe;
 

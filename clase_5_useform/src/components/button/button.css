@@ -1,0 +1,46 @@
+.custom-button {
+  min-width: 165px;
+  width: auto;
+  height: 50px;
+  letter-spacing: 0.5px;
+  line-height: 50px;
+  font-size: 12px;
+  padding: 0 35px 0 35px;
+  color: #fff;
+  background-color: black;
+  font-weight: bolder;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.custom-button:hover {
+  background-color: #fff;
+  color: black;
+  border: solid 1px black;
+}
+
+.custom-button:disabled,
+.custom-button:hover:disabled,
+.custom-button:active:disabled {
+  background: #ccc;
+  color: #979797;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+
+.custom-button.inverted {
+  background-color: #fff;
+  color: black;
+  border: solid 1px black;
+}
+
+.custom-button.inverted:hover {
+  color: #fff;
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+}
